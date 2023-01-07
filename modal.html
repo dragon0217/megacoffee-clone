@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Modal</title>   
+    <style>
+        #modal {
+            display: none;
+            position:relative;
+            width:100%;
+            height:100%;
+            z-index:1;
+        }
+        
+        #modal h2 {
+        margin:0;   
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        
+        #modal p { 
+            font-size: 15px;
+        }
+
+        #modal button {
+            display:inline-block;
+            width:100px;
+            height: 50px;
+            transform: translateX(250%);
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        
+        #modal .modal_content {
+            width:600px;
+            margin:100px auto;
+            padding:20px 10px;
+            background:#fff;
+            border:2px solid #666;
+        }
+        
+        #modal .modal_layer {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0, 0, 0, 0.5);
+            z-index:-1;
+        }   
+        </style>
+        
+</head>
+<body>
+
+<div>
+    <div id="root">
+    
+        <button type="button" id="modal_opne_btn">이용약관</button>
+        
+    </div>
+
+    <div id="modal">
+    
+        <div class="modal_content">
+            <h2>이용안내</h2>
+        
+            <p>개인정보수집 범위 : 이름, 연락처<br>
+                개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신<br>
+                * 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 본사 유관부서가 연락을 드릴 수 있습니다.<br><br>
+                
+                개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 지체없이 <br>파기하며 최대 보유기간은 1년을 넘기지 아니한다.</p>
+        
+            <button type="button" id="modal_close_btn">취소</button>
+        
+        </div>
+    
+        <div class="modal_layer"></div>
+    </div>
+</div>
+</body>
+</html>

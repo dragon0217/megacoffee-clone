@@ -1,0 +1,276 @@
+.main_content_wrap {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+footer {
+    height: 80px;
+    position: relative;
+    transform: translateY(-100%);
+  }
+  
+
+
+.main_top_content{
+    position: absolute;
+    background-color: #444;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    z-index: 1;
+    top: 100px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+
+
+.main_top_box h1{
+    color: #fdd000 ;
+    text-align: center;
+}
+
+
+.main_top_box {
+    color: #ffffff;
+    line-height: 50px;    
+}
+
+.small_title{
+    font-size: 20px;
+}
+
+.semi_title{
+    font-size: 56px;
+    padding-bottom: 20px;
+}
+
+
+
+
+.main_body_wrap{
+    width: 100%;
+    height: 1800px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.main_body_content{
+    position: relative;
+    top: 13%;
+    
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 500px;
+
+}
+
+.content-wrap1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.content-wrap2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.content-wrap3 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 52%;
+    font-size: 17px;
+    text-align: center;
+}
+
+.card-wrap {
+    display: flex;
+    width: 70%;
+    padding-left: 50px;
+    padding-bottom: 100px;
+
+}
+
+.card1 {
+    width: 17%;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card1-1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #fdd000;
+    font-weight: 900;
+}
+
+.card1-2 {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card1-3 {
+    font-weight: 300;
+}
+
+.bottom_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.bottom1-1 {
+    width: 100%;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-weight: 1000;
+}
+
+.bottom1-2 {
+    width: 80%;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+
+.bottom2 {
+    display: flex;
+    width: 90%;
+}
+
+.bottom2-1 {
+    width: 30%;
+    margin-left: 20px;
+}
+
+#triangle-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 60px solid #fdd000;
+    transform: translateX(0%);
+    transform: translateY(130%);
+  }
+
+
+.main_bottom_box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 150px;
+    background-color: #fdd000;
+    text-align: center;    
+    z-index: 100;
+    animation-name: scroll; 
+    animation-duration: 2s; 
+    animation-fill-mode:forwards;
+}
+
+.box2-1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box2-2 {
+    font-size: 35px;
+}
+
+
+@keyframes scroll {
+    from { top: 0px; }
+    to   { top: 200px; }
+}
+
+    ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #f2f2f2;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #fdd000;
+}
+
+
+
+@media screen and (max-width:800px) { 
+    .main_body_wrap {
+        height: 2700px;
+        bottom: 50px;
+    }
+    .card-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+
+    .card1 {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .bottom_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2-1 {
+        font-size: 24px;
+    }
+
+    .box2-2 {
+        font-size: 25px;
+    }
+
+    .content-wrap3 {
+        font-size: 13px;
+    }
+
+    .bottom_content{
+        width: 90%;
+    }
+
+
+    .main_top_content{
+        top: 6.5%;
+    }
+
+    #triangle-down {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 60px solid #fdd000;
+        transform: translateX(0%);
+        transform: translateY(130%);
+      }
+}
+
